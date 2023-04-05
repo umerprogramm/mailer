@@ -22,26 +22,26 @@ app.get('/',(req ,res)=>{
 
 
 
-app.post('/mail', async (req , res)=>{
-    console.log(req.body)
-  var nodemailer = require('nodemailer');
-  var transporter = nodemailer.createTransport({
-      service: 'Gmail',
-      auth: {
-          user: 'umerprogrammer@gmail.com',
-          pass: 'kfbwoukjnvdulnek'
-      }
-  });
+// app.post('/mail', async (req , res)=>{
+//     console.log(req.body)
+//   var nodemailer = require('nodemailer');
+//   var transporter = nodemailer.createTransport({
+//       service: 'Gmail',
+//       auth: {
+//           user: 'umerprogrammer@gmail.com',
+//           pass: 'kfbwoukjnvdulnek'
+//       }
+//   });
   
-  console.log('created');
-  transporter.sendMail({
-  from: 'umerprogrammer@gmail.com',
-    to: 'umerprogrammer@gmail.com',
-    subject: 'hello world!',
-    text: 'hello world!'
-  });
+//   console.log('created');
+//   transporter.sendMail({
+//   from: 'umerprogrammer@gmail.com',
+//     to: 'umerprogrammer@gmail.com',
+//     subject: 'hello world!',
+//     text: 'hello world!'
+//   });
 
-})
+// })
   
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
